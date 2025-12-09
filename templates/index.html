@@ -1,0 +1,441 @@
+{% extends "base.html" %}
+
+{% block title %}Home - Professional Color Detection Platform{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero-section text-white py-5">
+    <div class="container">
+        <div class="row align-items-center min-vh-80">
+            <div class="col-lg-6 hero-content">
+                
+                <h1 class="display-3 fw-bold mb-4">Transform Your Vision with Intelligent Color Detection</h1>
+                
+                <div class="d-flex flex-wrap gap-3 mb-4">
+                    <a href="{{ url_for('detection') }}" class="btn btn-light btn-lg">
+                        <i class="fas fa-play-circle me-2"></i>Live Demo
+                    </a>
+                    <a href="#features" class="btn btn-outline-light btn-lg">
+                        <i class="fas fa-chart-line me-2"></i>Learn More
+                    </a>
+                </div>
+                <div class="d-flex flex-wrap gap-4 text-white-50">
+                    <div class="d-flex align-items-center">
+                        <i class="fas fa-check-circle text-success me-2"></i>
+                        <span>Real-time Processing</span>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <i class="fas fa-check-circle text-success me-2"></i>
+                        <span>99% Accuracy</span>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <i class="fas fa-check-circle text-success me-2"></i>
+                        <span>No Installation Required</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="text-center position-relative">
+                    <div class="color-palette">
+                        <div class="color-box"></div>
+                        <div class="color-box"></div>
+                        <div class="color-box"></div>
+                        <div class="color-box"></div>
+                        <div class="color-box"></div>
+                    </div>
+                    <div class="mt-5">
+                        <i class="fas fa-eye-dropper display-1 mb-3" style="color: rgba(255,255,255,0.8);"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Stats Section -->
+<section class="stats-section text-white py-5">
+    <div class="container">
+        <div class="row text-center g-4">
+            <div class="col-md-3 col-6">
+                <div class="stat-number">99.2%</div>
+                <p class="text-white-50">Detection Accuracy</p>
+            </div>
+            <div class="col-md-3 col-6">
+                <div class="stat-number">50ms</div>
+                <p class="text-white-50">Processing Time</p>
+            </div>
+            <div class="col-md-3 col-6">
+                <div class="stat-number">15K+</div>
+                <p class="text-white-50">Colors Identified</p>
+            </div>
+            <div class="col-md-3 col-6">
+                <div class="stat-number">24/7</div>
+                <p class="text-white-50">Available</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Features Section -->
+<section id="features" class="py-5 bg-light">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="section-title fw-bold">Why Choose ColorDetector Pro?</h2>
+            <p class="text-muted lead">Advanced features designed for professionals</p>
+        </div>
+        <div class="row g-4">
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body text-center p-4">
+                        <div class="feature-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h5 class="card-title fw-bold">Real-time Processing</h5>
+                        <p class="card-text text-muted">Instant color analysis with sub-50ms processing time. Perfect for live applications and real-time design workflows.</p>
+                        <ul class="list-unstyled text-start">
+                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Live webcam integration</li>
+                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Instant feedback</li>
+                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i>No lag detection</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body text-center p-4">
+                        <div class="feature-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h5 class="card-title fw-bold">AI-Powered Analysis</h5>
+                        <p class="card-text text-muted">Advanced machine learning algorithms using K-means clustering for precise color identification and grouping.</p>
+                        <ul class="list-unstyled text-start">
+                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Smart color clustering</li>
+                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Adaptive algorithms</li>
+                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Continuous learning</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body text-center p-4">
+                        <div class="feature-icon">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <h5 class="card-title fw-bold">Multiple Formats</h5>
+                        <p class="card-text text-muted">Comprehensive color information in RGB, HEX, HSL, and human-readable names for all your workflow needs.</p>
+                        <ul class="list-unstyled text-start">
+                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i>RGB & HEX values</li>
+                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Color names</li>
+                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Export capabilities</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Technology Stack -->
+<section class="technology-stack py-5">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="section-title fw-bold">Built with Modern Technology</h2>
+            <p class="text-muted lead">Powered by cutting-edge frameworks and libraries</p>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-3 col-6">
+                <div class="tech-item">
+                    <div class="tech-icon">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <h6>Python 3.9+</h6>
+                    <p class="text-muted small">Backend processing</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-6">
+                <div class="tech-item">
+                    <div class="tech-icon">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <h6>OpenCV</h6>
+                    <p class="text-muted small">Computer vision</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-6">
+                <div class="tech-item">
+                    <div class="tech-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h6>Scikit-learn</h6>
+                    <p class="text-muted small">ML algorithms</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-6">
+                <div class="tech-item">
+                    <div class="tech-icon">
+                        <i class="fab fa-js"></i>
+                    </div>
+                    <h6>JavaScript</h6>
+                    <p class="text-muted small">Frontend logic</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Use Cases -->
+<section class="use-cases py-5">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="section-title fw-bold">Professional Use Cases</h2>
+            <p class="text-muted lead">Applications across various industries</p>
+        </div>
+        <div class="row g-4">
+            <div class="col-lg-4 col-md-6">
+                <div class="use-case-card">
+                    <div class="d-flex align-items-center mb-3">
+                        <div class="bg-primary rounded-circle p-3 me-3">
+                            <i class="fas fa-paint-brush text-white"></i>
+                        </div>
+                        <h5 class="mb-0">Graphic Design</h5>
+                    </div>
+                    <p class="text-muted">Extract color palettes from images for brand consistency and design system development.</p>
+                    <ul class="text-muted small">
+                        <li>Brand color extraction</li>
+                        <li>Palette generation</li>
+                        <li>Color harmony analysis</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="use-case-card">
+                    <div class="d-flex align-items-center mb-3">
+                        <div class="bg-success rounded-circle p-3 me-3">
+                            <i class="fas fa-shopping-cart text-white"></i>
+                        </div>
+                        <h5 class="mb-0">E-commerce</h5>
+                    </div>
+                    <p class="text-muted">Automated product color tagging and filtering for enhanced shopping experiences.</p>
+                    <ul class="text-muted small">
+                        <li>Product categorization</li>
+                        <li>Color-based search</li>
+                        <li>Inventory management</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="use-case-card">
+                    <div class="d-flex align-items-center mb-3">
+                        <div class="bg-warning rounded-circle p-3 me-3">
+                            <i class="fas fa-flask text-white"></i>
+                        </div>
+                        <h5 class="mb-0">Quality Control</h5>
+                    </div>
+                    <p class="text-muted">Automated color verification in manufacturing and production lines.</p>
+                    <ul class="text-muted small">
+                        <li>Color consistency checks</li>
+                        <li>Defect detection</li>
+                        <li>Quality assurance</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials -->
+<section class="bg-light py-5">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="section-title fw-bold">Trusted by Professionals</h2>
+            <p class="text-muted lead">What our users say about ColorDetector Pro</p>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="card-body p-4">
+                        <div class="text-warning mb-3">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="card-text mb-3">"Revolutionized our design workflow. The accuracy and speed are unmatched in the industry."</p>
+                        <div class="d-flex align-items-center">
+                            <div class="bg-primary rounded-circle me-3" style="width: 40px; height: 40px;"></div>
+                            <div>
+                                <h6 class="mb-0">Sarah Chen</h6>
+                                <small class="text-muted">Lead Designer, TechCorp</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="card-body p-4">
+                        <div class="text-warning mb-3">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="card-text mb-3">"The API integration was seamless. Our e-commerce platform now has advanced color search capabilities."</p>
+                        <div class="d-flex align-items-center">
+                            <div class="bg-success rounded-circle me-3" style="width: 40px; height: 40px;"></div>
+                            <div>
+                                <h6 class="mb-0">Marcus Johnson</h6>
+                                <small class="text-muted">CTO, StyleHub</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="card-body p-4">
+                        <div class="text-warning mb-3">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="card-text mb-3">"Incredible accuracy in color detection. Has become an essential tool in our quality control process."</p>
+                        <div class="d-flex align-items-center">
+                            <div class="bg-warning rounded-circle me-3" style="width: 40px; height: 40px;"></div>
+                            <div>
+                                <h6 class="mb-0">Dr. Emily Rodriguez</h6>
+                                <small class="text-muted">Research Director, InnovateLab</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section text-white py-5">
+    <div class="container text-center">
+        <h2 class="display-5 fw-bold mb-3">Ready to Transform Your Color Workflow?</h2>
+        <p class="lead mb-4">Join thousands of professionals using ColorDetector Pro for accurate, real-time color analysis.</p>
+        <div class="d-flex justify-content-center gap-3 flex-wrap">
+            <a href="{{ url_for('detection') }}" class="btn btn-light btn-lg">
+                <i class="fas fa-play-circle me-2"></i>Start Free Demo
+            </a>
+            <a href="{{ url_for('contact') }}" class="btn btn-outline-light btn-lg">
+                <i class="fas fa-calendar me-2"></i>Schedule Demo
+            </a>
+        </div>
+        <div class="mt-4">
+            <small class="text-white-50">
+                <i class="fas fa-shield-alt me-2"></i>No credit card required • 100% secure • GDPR compliant
+            </small>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="py-5">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="section-title fw-bold">Frequently Asked Questions</h2>
+            <p class="text-muted lead">Get answers to common questions</p>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="accordion" id="faqAccordion">
+                    <div class="accordion-item border-0 shadow-sm mb-3">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                How accurate is the color detection?
+                            </button>
+                        </h2>
+                        <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Our AI-powered system achieves 99.2% accuracy in color detection under normal lighting conditions. The system uses advanced machine learning algorithms to ensure precise color identification.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item border-0 shadow-sm mb-3">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                What webcam specifications are recommended?
+                            </button>
+                        </h2>
+                        <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                We recommend a 720p or higher resolution webcam for optimal results. Most modern webcams and smartphone cameras work perfectly with our system.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item border-0 shadow-sm mb-3">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                Can I use this for commercial purposes?
+                            </button>
+                        </h2>
+                        <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Yes! ColorDetector Pro is designed for both personal and commercial use. We offer enterprise licenses for large-scale commercial applications.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block scripts %}
+<script>
+// Add particles to hero section
+document.addEventListener('DOMContentLoaded', function() {
+    createParticles();
+    
+    // Animate stats counting
+    animateStats();
+});
+
+function createParticles() {
+    const heroSection = document.querySelector('.hero-section');
+    const particlesContainer = document.createElement('div');
+    particlesContainer.className = 'particles';
+    heroSection.appendChild(particlesContainer);
+
+    for (let i = 0; i < 20; i++) {
+        const particle = document.createElement('div');
+        particle.className = 'particle';
+        particle.style.width = Math.random() * 4 + 2 + 'px';
+        particle.style.height = particle.style.width;
+        particle.style.left = Math.random() * 100 + '%';
+        particle.style.animationDelay = Math.random() * 20 + 's';
+        particle.style.animationDuration = (Math.random() * 10 + 15) + 's';
+        particlesContainer.appendChild(particle);
+    }
+}
+
+function animateStats() {
+    const stats = document.querySelectorAll('.stat-number');
+    stats.forEach(stat => {
+        const target = parseInt(stat.textContent);
+        let current = 0;
+        const increment = target / 50;
+        const timer = setInterval(() => {
+            current += increment;
+            if (current >= target) {
+                current = target;
+                clearInterval(timer);
+            }
+            stat.textContent = Math.round(current) + (stat.textContent.includes('%') ? '%' : '');
+        }, 40);
+    });
+}
+</script>
+{% endblock %}

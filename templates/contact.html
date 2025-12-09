@@ -1,0 +1,303 @@
+{% extends "base.html" %}
+
+{% block title %}Contact Us - Get in Touch{% endblock %}
+
+{% block content %}
+<div class="container py-5">
+    <div class="row">
+        <div class="col-lg-8 mx-auto">
+            <h1 class="display-4 fw-bold text-center mb-5">Contact Us</h1>
+            
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body p-5">
+                            <h3 class="fw-bold mb-4">Send us a Message</h3>
+                            <form>
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label for="name" class="form-label">Full Name</label>
+                                        <input type="text" class="form-control" id="name" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="email" class="form-label">Email Address</label>
+                                        <input type="email" class="form-control" id="email" required>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="subject" class="form-label">Subject</label>
+                                        <input type="text" class="form-control" id="subject" required>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="message" class="form-label">Message</label>
+                                        <textarea class="form-control" id="message" rows="5" required></textarea>
+                                    </div>
+                                    <div class="col-12">
+                                        <button type="submit" class="btn btn-primary btn-lg">
+                                            <i class="fas fa-paper-plane me-2"></i>Send Message
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <h5 class="fw-bold mb-4">Contact Information</h5>
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fas fa-envelope text-primary me-3"></i>
+                                <span>support@colordetector.com</span>
+                            </div>
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fas fa-phone text-success me-3"></i>
+                                <span>+1 (555) 123-4567</span>
+                            </div>
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fas fa-map-marker-alt text-danger me-3"></i>
+                                <span>123 Tech Street, Digital City</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card border-0 shadow-sm mt-4">
+                        <div class="card-body p-4">
+                            <h5 class="fw-bold mb-3">Technical Support</h5>
+                            <p class="text-muted small">
+                                For technical issues or feature requests, please include detailed information 
+                                about your setup and the problem you're experiencing.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card border-0 shadow-sm mt-4">
+                        <div class="card-body p-4">
+                            <h5 class="fw-bold mb-3">Business Hours</h5>
+                            <div class="small">
+                                <div class="d-flex justify-content-between mb-2">
+                                    <span>Monday - Friday</span>
+                                    <span class="text-muted">9:00 AM - 6:00 PM</span>
+                                </div>
+                                <div class="d-flex justify-content-between mb-2">
+                                    <span>Saturday</span>
+                                    <span class="text-muted">10:00 AM - 4:00 PM</span>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <span>Sunday</span>
+                                    <span class="text-muted">Closed</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Map Section -->
+<section class="map-section py-0">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="card border-0 shadow-lg">
+                    <div class="card-body p-0">
+                        <div class="map-header bg-primary text-white p-3">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <h5 class="mb-0">
+                                    <i class="fas fa-map-marker-alt me-2"></i>
+                                    Visit Our Office
+                                </h5>
+                                <a href="https://maps.google.com/?q=123+Tech+Street,+Digital+City" 
+                                   target="_blank" 
+                                   class="btn btn-sm btn-light">
+                                    <i class="fas fa-directions me-1"></i>Get Directions
+                                </a>
+                            </div>
+                        </div>
+                        <div class="map-container">
+                            <!-- Google Maps Embed -->
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.177631294249!2d-73.98784428459418!3d40.72563597933084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a3c1dc1c67%3A0x9d1255b0dfcac5c5!2sTech%20Street%2C%20New%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2s!4v1620000000000!5m2!1sen!2s" 
+                                width="100%" 
+                                height="400" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade"
+                                class="map-iframe">
+                            </iframe>
+                        </div>
+                        <div class="map-footer bg-light p-3">
+                            <div class="row align-items-center">
+                                <div class="col-md-8">
+                                    <h6 class="mb-1">ColorDetector Pro Headquarters</h6>
+                                    <p class="text-muted small mb-0">
+                                        <i class="fas fa-map-marker-alt text-danger me-1"></i>
+                                        123 Tech Street, Digital City, DC 10001
+                                    </p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+.map-section {
+    background: var(--dark-bg);
+}
+
+.map-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.map-iframe {
+    display: block;
+}
+
+.map-header {
+    border-radius: 0;
+}
+
+.map-footer {
+    border-top: 1px solid #dee2e6;
+}
+
+/* Dark mode styles for map section */
+@media (prefers-color-scheme: dark) {
+    .map-header {
+        background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue)) !important;
+    }
+    
+    .map-footer {
+        background: var(--dark-card) !important;
+        border-top: 1px solid var(--dark-border);
+    }
+    
+    .map-footer h6 {
+        color: var(--dark-text);
+    }
+    
+    .map-footer .text-muted {
+        color: var(--dark-text-secondary) !important;
+    }
+    
+    .btn-outline-primary {
+        border-color: var(--primary-blue);
+        color: var(--primary-blue);
+    }
+    
+    .btn-outline-primary:hover {
+        background: var(--primary-blue);
+        color: white;
+    }
+    
+    .btn-outline-dark {
+        border-color: var(--dark-text);
+        color: var(--dark-text);
+    }
+    
+    .btn-outline-dark:hover {
+        background: var(--dark-text);
+        color: var(--dark-bg);
+    }
+}
+
+/* Responsive map */
+@media (max-width: 768px) {
+    .map-footer .btn-group {
+        margin-top: 1rem;
+        width: 100%;
+    }
+    
+    .map-footer .btn-group .btn {
+        flex: 1;
+    }
+    
+    .map-header .d-flex {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+    
+    .map-header .btn {
+        align-self: center;
+    }
+}
+
+/* Custom map styling */
+.map-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    background: linear-gradient(
+        135deg,
+        transparent 0%,
+        rgba(30, 64, 175, 0.03) 100%
+    );
+    z-index: 1;
+}
+
+/* Loading state for map */
+.map-iframe {
+    transition: opacity 0.3s ease;
+}
+
+.map-iframe.loading {
+    opacity: 0.7;
+}
+
+/* Custom scrollbar for map container */
+.map-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.map-container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.map-container::-webkit-scrollbar-thumb {
+    background: var(--primary-blue);
+    border-radius: 4px;
+}
+
+.map-container::-webkit-scrollbar-thumb:hover {
+    background: var(--secondary-blue);
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const mapIframe = document.querySelector('.map-iframe');
+    
+    // Add loading state
+    mapIframe.addEventListener('load', function() {
+        this.classList.remove('loading');
+    });
+    
+    mapIframe.addEventListener('error', function() {
+        // Fallback if map fails to load
+        this.src = 'https://www.openstreetmap.org/export/embed.html?bbox=-73.9900%2C40.7250%2C-73.9800%2C40.7300&layer=mapnik&marker=40.7275,-73.9850';
+    });
+    
+    
+    // Add click tracking (optional - for analytics)
+    [getDirectionsBtn, googleMapsBtn, appleMapsBtn].forEach(btn => {
+        btn.addEventListener('click', function(e) {
+            console.log('Map direction clicked:', this.href);
+            // You can add analytics tracking here
+        });
+    });
+});
+</script>
+{% endblock %}

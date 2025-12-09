@@ -1,0 +1,527 @@
+{% extends "base.html" %}
+
+{% block title %}About - ColorDetector Pro | Advanced Color Recognition Technology{% endblock %}
+
+{% block content %}
+<!-- Hero Header -->
+<section class="hero-section text-white py-5">
+    <div class="container">
+        <div class="row align-items-center min-vh-60">
+            <div class="col-lg-8 mx-auto text-center hero-content">
+                
+
+                <h1 class="display-4 fw-bold mb-4">Precision Color Intelligence</h1>
+                <p class="lead mb-4">Leading the evolution of real-time color detection through advanced computer vision and machine learning algorithms.</p>
+                <div class="d-flex justify-content-center gap-3 flex-wrap">
+                    <a href="{{ url_for('detection') }}" class="btn btn-light btn-lg">
+                        <i class="fas fa-play-circle me-2"></i>Experience Demo
+                    </a>
+                    <a href="#technology" class="btn btn-outline-light btn-lg">
+                        <i class="fas fa-microscope me-2"></i>Explore Technology
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Company Overview -->
+<section class="py-5 bg-white">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                
+
+                <h2 class="fw-bold mb-4">Redefining Color Detection Standards</h2>
+                <p class="lead text-muted mb-4">
+                    ColorDetector Pro represents the culmination of years of research in computer vision and machine learning. 
+                    We've developed a sophisticated platform that delivers professional-grade color analysis with unprecedented 
+                    accuracy and speed.
+                </p>
+                <div class="row">
+                    <div class="col-6">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="bg-primary rounded-circle p-2 me-3">
+                                <i class="fas fa-bullseye text-white"></i>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold mb-1">99.2%</h5>
+                                <small class="text-muted">Accuracy Rate</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="bg-primary rounded-circle p-2 me-3">
+                                <i class="fas fa-bolt text-white"></i>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold mb-1">&lt;50ms</h5>
+                                <small class="text-muted">Processing Time</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="card border-0 shadow-lg">
+                    <div class="card-body p-4">
+                        <div class="row text-center">
+                            <div class="col-4">
+                                <div class="feature-icon mx-auto" style="width: 60px; height: 60px; font-size: 1.5rem;">
+                                    <i class="fas fa-camera"></i>
+                                </div>
+                                <h6 class="fw-bold mt-2">Real-time</h6>
+                                <small class="text-muted">Live Analysis</small>
+                            </div>
+                            <div class="col-4">
+                                <div class="feature-icon mx-auto" style="width: 60px; height: 60px; font-size: 1.5rem;">
+                                    <i class="fas fa-brain"></i>
+                                </div>
+                                <h6 class="fw-bold mt-2">AI-Powered</h6>
+                                <small class="text-muted">ML Algorithms</small>
+                            </div>
+                            <div class="col-4">
+                                <div class="feature-icon mx-auto" style="width: 60px; height: 60px; font-size: 1.5rem;">
+                                    <i class="fas fa-chart-line"></i>
+                                </div>
+                                <h6 class="fw-bold mt-2">Enterprise</h6>
+                                <small class="text-muted">Grade Precision</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Core Technology -->
+<section id="technology" class="py-5 bg-off-white">
+    <div class="container">
+        <div class="text-center mb-5">
+            
+            <h2 class="fw-bold mb-3">Advanced Technical Architecture</h2>
+            <p class="text-muted lead">Built on cutting-edge computer vision and machine learning frameworks</p>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-lg-4">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="card-body p-4">
+                        <div class="d-flex align-items-start mb-3">
+                            <div class="feature-icon me-3" style="width: 50px; height: 50px; font-size: 1.2rem;">
+                                <i class="fas fa-project-diagram"></i>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold">K-means Clustering</h5>
+                                <p class="text-muted small">Advanced clustering algorithm for precise color segmentation and dominant color identification.</p>
+                            </div>
+                        </div>
+                        <div class="tech-stack">
+                            <span class="badge bg-primary me-1">Machine Learning</span>
+                            <span class="badge bg-primary me-1">Clustering</span>
+                            <span class="badge bg-primary">Pattern Recognition</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="card-body p-4">
+                        <div class="d-flex align-items-start mb-3">
+                            <div class="feature-icon me-3" style="width: 50px; height: 50px; font-size: 1.2rem;">
+                                <i class="fas fa-eye"></i>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold">Computer Vision</h5>
+                                <p class="text-muted small">Real-time image processing with OpenCV for frame analysis and color space transformations.</p>
+                            </div>
+                        </div>
+                        <div class="tech-stack">
+                            <span class="badge bg-primary me-1">OpenCV</span>
+                            <span class="badge bg-primary me-1">Image Processing</span>
+                            <span class="badge bg-primary">Real-time</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="card-body p-4">
+                        <div class="d-flex align-items-start mb-3">
+                            <div class="feature-icon me-3" style="width: 50px; height: 50px; font-size: 1.2rem;">
+                                <i class="fas fa-network-wired"></i>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold">Web Architecture</h5>
+                                <p class="text-muted small">Modern Flask backend with responsive frontend for seamless user experience across devices.</p>
+                            </div>
+                        </div>
+                        <div class="tech-stack">
+                            <span class="badge bg-primary me-1">Flask</span>
+                            <span class="badge bg-primary me-1">REST API</span>
+                            <span class="badge bg-primary">WebSockets</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Leadership Team -->
+<section class="py-5 bg-white">
+    <div class="container">
+        <div class="text-center mb-5">
+            
+            <h2 class="fw-bold mb-3">Industry Experts & Visionaries</h2>
+            <p class="text-muted lead">Leading professionals in computer vision and AI technology</p>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-lg-4 col-md-6">
+                <div class="card border-0 shadow-sm h-100 team-card">
+                    <div class="card-body text-center p-4">
+                        
+                        <h5 class="fw-bold mb-1">Dr. Sarah Davis</h5>
+                        <p class="text-primary mb-3">Chief Technology Officer</p>
+                        <p class="text-muted small mb-3">
+                            Former Senior AI Researcher at Google with 12+ years in computer vision. 
+                            PhD in Machine Learning from Stanford University.
+                        </p>
+                        <div class="expertise-tags">
+                            <span class="badge bg-light text-dark me-1">Computer Vision</span>
+                            <span class="badge bg-light text-dark">AI Research</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card border-0 shadow-sm h-100 team-card">
+                    <div class="card-body text-center p-4">
+                        
+                        <h5 class="fw-bold mb-1">Marcus Johnson</h5>
+                        <p class="text-primary mb-3">Lead ML Engineer</p>
+                        <p class="text-muted small mb-3">
+                            Ex-Microsoft AI architect specializing in real-time systems and 
+                            color space algorithms. MS in Computer Science from MIT.
+                        </p>
+                        <div class="expertise-tags">
+                            <span class="badge bg-light text-dark me-1">ML Algorithms</span>
+                            <span class="badge bg-light text-dark">Real-time Systems</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card border-0 shadow-sm h-100 team-card">
+                    <div class="card-body text-center p-4">
+                        
+                        <h5 class="fw-bold mb-1">Emily Chen</h5>
+                        <p class="text-primary mb-3">Head of Product</p>
+                        <p class="text-muted small mb-3">
+                            Product strategist with background in design tools and color theory. 
+                            MBA from Harvard Business School.
+                        </p>
+                        <div class="expertise-tags">
+                            <span class="badge bg-light text-dark me-1">Product Strategy</span>
+                            <span class="badge bg-light text-dark">Color Theory</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Company Values -->
+<section class="py-5 bg-off-white">
+    <div class="container">
+        <div class="text-center mb-5">
+            
+            <h2 class="fw-bold mb-3">Principles Driving Innovation</h2>
+            <p class="text-muted lead">The foundation of our technological excellence</p>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-lg-3 col-md-6">
+                <div class="text-center value-item">
+                    <div class="value-icon mx-auto">
+                        <i class="fas fa-crosshairs"></i>
+                    </div>
+                    <h5 class="fw-bold mt-4 mb-3">Precision</h5>
+                    <p class="text-muted small">
+                        Uncompromising accuracy in every color detection, ensuring reliable results 
+                        for professional applications.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="text-center value-item">
+                    <div class="value-icon mx-auto">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h5 class="fw-bold mt-4 mb-3">Innovation</h5>
+                    <p class="text-muted small">
+                        Continuous advancement in computer vision technology, pushing the boundaries 
+                        of what's possible in color analysis.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="text-center value-item">
+                    <div class="value-icon mx-auto">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h5 class="fw-bold mt-4 mb-3">Accessibility</h5>
+                    <p class="text-muted small">
+                        Democratizing advanced color detection technology for designers, developers, 
+                        and businesses of all sizes.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="text-center value-item">
+                    <div class="value-icon mx-auto">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h5 class="fw-bold mt-4 mb-3">Reliability</h5>
+                    <p class="text-muted small">
+                        Enterprise-grade stability and performance for mission-critical applications 
+                        across various industries.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Industry Applications -->
+<section class="py-5 bg-white">
+    <div class="container">
+        <div class="text-center mb-5">
+            
+            <h2 class="fw-bold mb-3">Transforming Industries</h2>
+            <p class="text-muted lead">Professional applications across multiple sectors</p>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-lg-4">
+                <div class="application-card card border-0 shadow-sm h-100">
+                    <div class="card-body p-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="app-icon me-3">
+                                <i class="fas fa-palette"></i>
+                            </div>
+                            <h5 class="fw-bold mb-0">Graphic Design</h5>
+                        </div>
+                        <p class="text-muted small">
+                            Automated color palette extraction and brand consistency analysis 
+                            for design professionals and agencies.
+                        </p>
+                        <ul class="text-muted small">
+                            <li>Brand color identification</li>
+                            <li>Palette generation</li>
+                            <li>Color harmony analysis</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="application-card card border-0 shadow-sm h-100">
+                    <div class="card-body p-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="app-icon me-3">
+                                <i class="fas fa-shopping-cart"></i>
+                            </div>
+                            <h5 class="fw-bold mb-0">E-commerce</h5>
+                        </div>
+                        <p class="text-muted small">
+                            Advanced product color tagging and visual search capabilities 
+                            for enhanced customer shopping experiences.
+                        </p>
+                        <ul class="text-muted small">
+                            <li>Product categorization</li>
+                            <li>Color-based search</li>
+                            <li>Inventory management</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="application-card card border-0 shadow-sm h-100">
+                    <div class="card-body p-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="app-icon me-3">
+                                <i class="fas fa-industry"></i>
+                            </div>
+                            <h5 class="fw-bold mb-0">Manufacturing</h5>
+                        </div>
+                        <p class="text-muted small">
+                            Automated quality control and color consistency verification 
+                            in production and manufacturing processes.
+                        </p>
+                        <ul class="text-muted small">
+                            <li>Quality assurance</li>
+                            <li>Defect detection</li>
+                            <li>Color matching</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Technology Partners -->
+<section class="py-5 bg-off-white">
+    <div class="container">
+        <div class="text-center mb-5">
+            
+            <h2 class="fw-bold mb-3">Built with Industry Standards</h2>
+            <p class="text-muted lead">Leveraging proven technologies for reliable performance</p>
+        </div>
+
+        <div class="row g-4 align-items-center justify-content-center">
+            <div class="col-lg-2 col-md-3 col-4 text-center">
+                <div class="tech-partner-card bg-white p-4 rounded shadow-sm">
+                    <i class="fab fa-python display-6 text-primary mb-2"></i>
+                    <p class="fw-bold mb-0 small">Python 3.9</p>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-4 text-center">
+                <div class="tech-partner-card bg-white p-4 rounded shadow-sm">
+                    <i class="fas fa-camera display-6 text-primary mb-2"></i>
+                    <p class="fw-bold mb-0 small">OpenCV</p>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-4 text-center">
+                <div class="tech-partner-card bg-white p-4 rounded shadow-sm">
+                    <i class="fas fa-brain display-6 text-primary mb-2"></i>
+                    <p class="fw-bold mb-0 small">Scikit-learn</p>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-4 text-center">
+                <div class="tech-partner-card bg-white p-4 rounded shadow-sm">
+                    <i class="fab fa-js display-6 text-primary mb-2"></i>
+                    <p class="fw-bold mb-0 small">JavaScript</p>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-4 text-center">
+                <div class="tech-partner-card bg-white p-4 rounded shadow-sm">
+                    <i class="fab fa-bootstrap display-6 text-primary mb-2"></i>
+                    <p class="fw-bold mb-0 small">Bootstrap 5</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section text-white py-5">
+    <div class="container text-center">
+        <h2 class="display-5 fw-bold mb-3">Experience Professional Color Detection</h2>
+        <p class="lead mb-4">Join industry leaders using our advanced color recognition technology</p>
+        <div class="d-flex justify-content-center gap-3 flex-wrap">
+            <a href="{{ url_for('detection') }}" class="btn btn-light btn-lg">
+                <i class="fas fa-play-circle me-2"></i>Launch Demo
+            </a>
+            <a href="{{ url_for('contact') }}" class="btn btn-outline-light btn-lg">
+                <i class="fas fa-comment me-2"></i>Contact Sales
+            </a>
+        </div>
+    </div>
+</section>
+
+<style>
+.min-vh-60 {
+    min-height: 60vh;
+}
+
+.bg-off-white {
+    background-color: var(--off-white);
+}
+
+.team-avatar {
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    transition: transform 0.3s ease;
+}
+
+.team-card:hover .team-avatar {
+    transform: scale(1.1);
+}
+
+.initials {
+    color: white;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.value-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue));
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+.value-item:hover .value-icon {
+    transform: rotate(5deg) scale(1.1);
+}
+
+.app-icon {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue));
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.application-card:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+}
+
+.tech-partner-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tech-partner-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(30, 64, 175, 0.15) !important;
+}
+
+.expertise-tags {
+    margin-top: 1rem;
+}
+
+.tech-stack {
+    margin-top: 1rem;
+}
+
+.team-card {
+    transition: transform 0.3s ease;
+}
+
+.team-card:hover {
+    transform: translateY(-5px);
+}
+</style>
+{% endblock %}
